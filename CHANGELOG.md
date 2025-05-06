@@ -1,5 +1,17 @@
 # Changelog
 
+## Release (2025-05-06)
+
+* @nrg-ui/core 0.34.2 (patch)
+* @nrg-ui/standards 0.4.4 (patch)
+
+#### :bug: Bug Fix
+* `@nrg-ui/core`, `@nrg-ui/standards`
+  * [#458](https://github.com/knoxville-utilities-board/nrg-ui/pull/458) fix(standards): Use base recommended config for eslint-plugin-n ([@TSenter](https://github.com/TSenter))
+
+#### Committers: 1
+- Tyler Senter ([@TSenter](https://github.com/TSenter))
+
 ## Release (2025-04-29)
 
 * @nrg-ui/css 0.20.0 (minor)
