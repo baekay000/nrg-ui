@@ -234,7 +234,7 @@ export default class FileUpload extends BoundValue<FileUploadSignature, File[]> 
           {{!-- <div class="d-flex flex-column align-items-center mt-4 row row-cols-12"> --}}
             <div
               style={{htmlSafe "border-style: dashed !important;"}}
-              class="p-2 border border-2 rounded-3 d-flex flex-row align-items-center
+              class="p-4 border border-2 rounded-3 d-flex flex-row align-items-center
               {{if this.isDraggingOver "bg-dark-subtle"}}"
               {{on "dragover" this.handleDragover}}
               {{on "dragenter" (fn this.toggleIsDragging true)}}
@@ -242,8 +242,8 @@ export default class FileUpload extends BoundValue<FileUploadSignature, File[]> 
               {{on "dragleave" (fn this.toggleIsDragging false)}}
               {{on "drop" this.handleDrop}}
             >
-              <div class="d-flex flex-column flex-md-row align-items-center justify-content-center my-3">
-                <Button
+              <div class="w-100 d-flex flex-column flex-md-row align-items-center justify-content-center my-4">
+                {{!-- <Button
                   class="{{this.themedButtonClass}} me-2"
                   @disabled={{@disabled}}
                   @icon="bi-upload"
@@ -252,17 +252,17 @@ export default class FileUpload extends BoundValue<FileUploadSignature, File[]> 
                   @onClick={{this.openInput}}
                   @text={{t "nrg.file-upload.upload"}}
                   data-test-open="modal"
-                />
-                {{!-- <i class="bi bi-file-earmark-text me-2" /> --}}
-                <p class="m-0 fst-italic">
+                /> --}}
+                <i class="bi bi-file-earmark-text mx-2 fs-4" />
+                <p class="m-0">
                   {{t "nrg.file-upload.dragAndDrop"}}
                 </p>
-                {{!-- <Button
-                  class="btn btn-link p-0 m-0 ms-1"
+                <Button
+                  class="btn btn-link p-0 m-0 ms-1 fst-italic"
                   @onClick={{this.openInput}}
                   @text={{t "nrg.file-upload.selectFiles"}}
                   data-test-open="input"
-                /> --}}
+                />
                 <input
                   accept={{this.accept}}
                   aria-describedby={{@describedBy}}
